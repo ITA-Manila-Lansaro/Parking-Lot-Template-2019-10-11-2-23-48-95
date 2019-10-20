@@ -24,12 +24,12 @@ public class ParkingOrderController {
     @PostMapping(value = "/{parkingName}", produces = {"application/json"})
     public ParkingOrder createOrder(@PathVariable String parkingName,
                                   @RequestParam ParkingOrder parkingOrder) throws NotFoundException {
+
         ParkingLot parkingLot = parkingLotService.getParkingLot(parkingName);
 
         if (parkingLot != null) {
             return parkingOrderService.createParkingOrder(parkingLot, parkingOrder);
         }
-
         throw new NotFoundException(PARKING_LOT_NOT_FOUND);
     }
 
