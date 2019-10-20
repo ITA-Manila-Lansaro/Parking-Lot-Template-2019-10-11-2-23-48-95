@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class ParkingLot {
@@ -16,6 +17,17 @@ public class ParkingLot {
     private String name;
     private int capacity;
     private String location;
+
+    @OneToMany
+    private ParkingOrder parkingOrder;
+
+    public ParkingOrder getParkingOrder() {
+        return parkingOrder;
+    }
+
+    public void setParkingOrder(ParkingOrder parkingOrder) {
+        this.parkingOrder = parkingOrder;
+    }
 
     public String getId() {
         return id;
