@@ -1,4 +1,4 @@
-package com.thoughtworks.parking_lot.Controller;
+package com.thoughtworks.parking_lot.Controller.ControllerAdvice;
 
 public class ErrorReponse {
 

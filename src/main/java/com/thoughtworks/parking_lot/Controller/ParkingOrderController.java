@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class ParkingOrderController {
     private static final String PARKING_LOT_NOT_FOUND = "Parking Lot Not found";
     private static final String PARKING_LOT_IS_FULL = "Parking Lot is full";
+    public static final String PLATE_NUMBER_NOT_FOUND = "Plate Number Not Found";
 
     private final ParkingLotService parkingLotService;
 
@@ -25,7 +26,7 @@ public class ParkingOrderController {
 
     @PostMapping(value = "/{parkingName}", produces = {"application/json"})
     public ParkingOrder createOrder(@PathVariable String parkingName,
-                                    @RequestParam ParkingOrder parkingOrder) throws NotFoundException, InterruptedException {
+                                    @RequestBody ParkingOrder parkingOrder) throws NotFoundException, InterruptedException {
 
         ParkingLot parkingLot = parkingLotService.getParkingLot(parkingName);
 
@@ -45,6 +46,6 @@ public class ParkingOrderController {
         if (parkingOrder != null) {
             return parkingOrder;
         }
-        throw new NotFoundException(PARKING_LOT_NOT_FOUND);
+        throw new NotFoundException(PLATE_NUMBER_NOT_FOUND);
     }
 }

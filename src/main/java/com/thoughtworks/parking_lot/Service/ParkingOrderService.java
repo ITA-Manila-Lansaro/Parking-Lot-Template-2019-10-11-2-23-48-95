@@ -35,14 +35,17 @@ public class ParkingOrderService {
 
     public ParkingOrder checkOutCar(String plateNumber) {
         ParkingOrder parkingOrder = parkingOrderRepo.findParkingOderByPlateNumber(plateNumber);
-        parkingOrder.setCloseTime(createNewDateFormat(new Date()));
-        parkingOrder.setOrderStatus("Close");
-        parkingOrderRepo.save(parkingOrder);
-        return parkingOrder;
+        if (parkingOrder != null) {
+            parkingOrder.setCloseTime(createNewDateFormat(new Date()));
+            parkingOrder.setOrderStatus("Close");
+            parkingOrderRepo.save(parkingOrder);
+            return parkingOrder;
+        }
+        return null;
     }
 
     public boolean isFull(ParkingLot parkingLot) {
-        List<ParkingLot> parkingLotList = parkingOrderRepo.findAllByParkingLot(parkingLot);
+        List<ParkingLot> parkingLotList = parkingOrderRepo.lookAllParkingLotById(parkingLot.getId());
         return parkingLotList.size() >= parkingLot.getCapacity();
     }
 }
