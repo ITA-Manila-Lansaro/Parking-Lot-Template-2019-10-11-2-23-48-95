@@ -6,39 +6,43 @@ import com.thoughtworks.parking_lot.Service.ParkingLotService;
 import com.thoughtworks.parking_lot.Service.ParkingOrderService;
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/parkingOrder")
 public class ParkingOrderController {
-    public static final String PARKING_LOT_NOT_FOUND = "Parking Lot Not found";
-    @Autowired
-    ParkingLotService parkingLotService;
+    private static final String PARKING_LOT_NOT_FOUND = "Parking Lot Not found";
+    private static final String PARKING_LOT_IS_FULL = "Parking Lot is full";
 
-    @Autowired
-    ParkingOrderService parkingOrderService;
+    private final ParkingLotService parkingLotService;
+
+    private final ParkingOrderService parkingOrderService;
+
+    public ParkingOrderController(ParkingLotService parkingLotService, ParkingOrderService parkingOrderService) {
+        this.parkingLotService = parkingLotService;
+        this.parkingOrderService = parkingOrderService;
+    }
 
     @PostMapping(value = "/{parkingName}", produces = {"application/json"})
     public ParkingOrder createOrder(@PathVariable String parkingName,
-                                  @RequestParam ParkingOrder parkingOrder) throws NotFoundException {
+                                    @RequestParam ParkingOrder parkingOrder) throws NotFoundException, InterruptedException {
 
         ParkingLot parkingLot = parkingLotService.getParkingLot(parkingName);
 
         if (parkingLot != null) {
-            return parkingOrderService.createParkingOrder(parkingLot, parkingOrder);
+            if (!parkingOrderService.isFull(parkingLot))
+                return parkingOrderService.createParkingOrder(parkingLot, parkingOrder);
+            throw new InterruptedException(PARKING_LOT_IS_FULL);
         }
         throw new NotFoundException(PARKING_LOT_NOT_FOUND);
     }
 
     @PatchMapping(value = "/{plateNumber}", produces = {"application/json"})
-    public ParkingOrder checkOut (@PathVariable String plateNumber) throws NotFoundException {
+    public ParkingOrder checkOut(@PathVariable String plateNumber) throws NotFoundException {
 
         ParkingOrder parkingOrder = parkingOrderService.checkOutCar(plateNumber);
 
-        if(parkingOrder != null){
+        if (parkingOrder != null) {
             return parkingOrder;
         }
         throw new NotFoundException(PARKING_LOT_NOT_FOUND);

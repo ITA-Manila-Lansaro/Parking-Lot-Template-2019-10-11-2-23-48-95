@@ -9,17 +9,20 @@ import org.springframework.stereotype.Service;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class ParkingOrderService {
 
-    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
+    private final ParkingOrderRepo parkingOrderRepo;
 
-    @Autowired
-    ParkingOrderRepo parkingOrderRepo;
+    public ParkingOrderService(ParkingOrderRepo parkingOrderRepo) {
+        this.parkingOrderRepo = parkingOrderRepo;
+    }
 
-    public String createNewDateFormat (Date date){
+    private String createNewDateFormat(Date date){
         return dateFormat.format(date);
     }
 
@@ -36,5 +39,10 @@ public class ParkingOrderService {
         parkingOrder.setOrderStatus("Close");
         parkingOrderRepo.save(parkingOrder);
         return parkingOrder;
+    }
+
+    public boolean isFull(ParkingLot parkingLot) {
+        List<ParkingLot> parkingLotList = parkingOrderRepo.findAllByParkingLot(parkingLot);
+        return parkingLotList.size() >= parkingLot.getCapacity();
     }
 }
