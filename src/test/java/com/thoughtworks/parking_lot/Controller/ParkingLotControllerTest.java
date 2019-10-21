@@ -34,13 +34,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ParkingLotControllerTest {
 
     @MockBean
-    private ParkingLotService parkingLotService;
+    ParkingLotService parkingLotService;
 
     @Autowired
-    private MockMvc mvc;
+    MockMvc mvc;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    ObjectMapper objectMapper;
 
     private ParkingLot parkingLot = new ParkingLot();
 
@@ -55,7 +55,7 @@ class ParkingLotControllerTest {
     private List<ParkingLot> parkingLotList = new ArrayList<>();
 
     @Test
-    void addParkingLot() throws Exception {
+    void should_add_parking_lot_successfully() throws Exception {
         ResultActions result = mvc.perform(post("/parkingLot")
         .contentType("application/json")
         .content(objectMapper.writeValueAsString(parkingLot)));
@@ -64,7 +64,7 @@ class ParkingLotControllerTest {
     }
 
     @Test
-    void getAllParkingLot() throws Exception {
+    void should_get_all_parking_lot() throws Exception {
         parkingLotList.add(parkingLot);
         parkingLotList.add(parkingLot);
         when(parkingLotService.getAllParkingLot()).thenReturn(parkingLotList);
@@ -76,7 +76,7 @@ class ParkingLotControllerTest {
     }
 
     @Test
-    void getParkingLot() throws Exception {
+    void should_get_specific_parking_lot() throws Exception {
         when(parkingLotService.getParkingLot("Parking Lot 1")).thenReturn(parkingLot);
         ResultActions result = mvc.perform(get("/parkingLot/Parking Lot 1"));
 
@@ -89,7 +89,7 @@ class ParkingLotControllerTest {
     }
 
     @Test
-    void updateCapacity() throws Exception {
+    void should_update_parking_lot_facility() throws Exception {
         parkingLot.setCapacity(15);
         when(parkingLotService.expandCapacity("Parking Lot 1", 15)).thenReturn(parkingLot);
 
