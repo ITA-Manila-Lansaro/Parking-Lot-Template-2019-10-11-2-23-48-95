@@ -12,6 +12,7 @@ public interface ParkingOrderRepo extends JpaRepository<ParkingOrder, String> {
 
     ParkingOrder findParkingOderByPlateNumber(String plateNumber);
 
-    @Query("SELECT p.parkingLot FROM ParkingOrder p WHERE p.parkingLot.id = :parkingLotId")
+    @Query("SELECT p.parkingLot FROM ParkingOrder p WHERE p.parkingLot.id = :parkingLotId AND p.orderStatus = 'Open'")
     List<ParkingLot> lookAllParkingLotById(@Param("parkingLotId") String parkingLotId);
+
 }

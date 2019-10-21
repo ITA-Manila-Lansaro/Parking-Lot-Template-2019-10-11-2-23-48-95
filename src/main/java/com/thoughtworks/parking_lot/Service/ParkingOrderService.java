@@ -16,11 +16,8 @@ public class ParkingOrderService {
 
     private DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
-    private final ParkingOrderRepo parkingOrderRepo;
-
-    public ParkingOrderService(ParkingOrderRepo parkingOrderRepo) {
-        this.parkingOrderRepo = parkingOrderRepo;
-    }
+    @Autowired
+    ParkingOrderRepo parkingOrderRepo;
 
     private String createNewDateFormat(Date date){
         return dateFormat.format(date);

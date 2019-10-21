@@ -1581,3 +1581,634 @@ Caused by: org.hibernate.QueryException: could not resolve property: Id of: com.
 2019-10-21 02:05:25.838 DEBUG 109092 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse@6501c8ce]
 2019-10-21 02:05:25.839 DEBUG 109092 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.InterruptedException: Parking Lot is full]
 2019-10-21 02:05:25.839 DEBUG 109092 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2019-10-21 09:28:02.632  INFO 104624 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 104624 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:28:02.632  INFO 104624 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 09:28:02.648 DEBUG 104624 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 09:28:03.751 DEBUG 104624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:28:03.967  INFO 104624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:28:03.967 DEBUG 104624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:28:04.020 DEBUG 104624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:28:04.051 DEBUG 104624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:28:04.051 DEBUG 104624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:28:04.120  INFO 104624 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 09:28:04.120  INFO 104624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 09:28:04.136  INFO 104624 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 09:28:04.152  INFO 104624 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.106 seconds (JVM running for 3.091)
+2019-10-21 09:28:04.189  WARN 104624 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-10-21 09:28:04.236 DEBUG 104624 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 09:28:02 CST 2019
+2019-10-21 09:28:04.236  INFO 104624 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:28:50.428  INFO 91320 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 91320 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:28:50.428  INFO 91320 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 09:28:50.443 DEBUG 91320 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 09:28:51.531 DEBUG 91320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:28:51.731  INFO 91320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:28:51.747 DEBUG 91320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:28:51.794 DEBUG 91320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:28:51.816 DEBUG 91320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:28:51.816 DEBUG 91320 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:28:51.878  INFO 91320 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 09:28:51.878  INFO 91320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 09:28:51.894  INFO 91320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 09:28:51.916  INFO 91320 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.943 seconds (JVM running for 2.853)
+2019-10-21 09:28:51.947 DEBUG 91320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException
+2019-10-21 09:28:52.001 DEBUG 91320 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to []
+2019-10-21 09:28:52.001  WARN 91320 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException]
+2019-10-21 09:28:52.016 DEBUG 91320 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 09:28:50 CST 2019
+2019-10-21 09:28:52.016  INFO 91320 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:30:14.926  INFO 144180 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 144180 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:30:14.926  INFO 144180 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 09:30:14.933 DEBUG 144180 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@42561fba
+2019-10-21 09:30:16.151 DEBUG 144180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:30:16.399  INFO 144180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:30:16.414 DEBUG 144180 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:30:16.468 DEBUG 144180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:30:16.499 DEBUG 144180 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:30:16.499 DEBUG 144180 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:30:16.599  INFO 144180 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 09:30:16.599  INFO 144180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 09:30:16.599  INFO 144180 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 09:30:16.637  INFO 144180 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.105 seconds (JVM running for 3.425)
+2019-10-21 09:30:16.684 DEBUG 144180 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException
+2019-10-21 09:30:16.753 DEBUG 144180 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to []
+2019-10-21 09:30:16.753  WARN 144180 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException]
+2019-10-21 09:30:16.784 DEBUG 144180 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@42561fba, started on Mon Oct 21 09:30:14 CST 2019
+2019-10-21 09:30:16.800  INFO 144180 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:30:55.858  INFO 81732 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 81732 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:30:55.858  INFO 81732 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 09:30:55.880 DEBUG 81732 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28c88600
+2019-10-21 09:30:56.998 DEBUG 81732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:30:57.230  INFO 81732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:30:57.246 DEBUG 81732 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:30:57.315 DEBUG 81732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:30:57.330 DEBUG 81732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:30:57.346 DEBUG 81732 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:30:57.430  INFO 81732 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 09:30:57.430  INFO 81732 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 09:30:57.430  INFO 81732 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 09:30:57.462  INFO 81732 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.201 seconds (JVM running for 3.245)
+2019-10-21 09:30:57.515 DEBUG 81732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException
+2019-10-21 09:30:57.584 DEBUG 81732 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to []
+2019-10-21 09:30:57.584  WARN 81732 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException]
+2019-10-21 09:30:57.600 DEBUG 81732 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@28c88600, started on Mon Oct 21 09:30:55 CST 2019
+2019-10-21 09:30:57.600  INFO 81732 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:33:45.544  INFO 124844 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 124844 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:33:45.544  INFO 124844 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 09:33:45.560 DEBUG 124844 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 09:33:46.546 DEBUG 124844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:33:46.731  INFO 124844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:33:46.747 DEBUG 124844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:33:46.800 DEBUG 124844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:33:46.816 DEBUG 124844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:33:46.831 DEBUG 124844 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:33:46.885  INFO 124844 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 09:33:46.885  INFO 124844 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 09:33:46.900  INFO 124844 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2019-10-21 09:33:46.932  INFO 124844 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.135 seconds (JVM running for 3.048)
+2019-10-21 09:33:46.969 DEBUG 124844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException
+2019-10-21 09:33:47.016 DEBUG 124844 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to []
+2019-10-21 09:33:47.016  WARN 124844 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException]
+2019-10-21 09:33:47.048 DEBUG 124844 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 09:33:45 CST 2019
+2019-10-21 09:33:47.063  INFO 124844 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:45:07.226  INFO 106828 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL23-W10 with PID 106828 (D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95\build\classes\java\main started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 09:45:07.226  INFO 106828 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 09:45:07.805  INFO 106828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 09:45:07.843  INFO 106828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 2 repository interfaces.
+2019-10-21 09:45:08.092  INFO 106828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$720d9f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 09:45:08.375  INFO 106828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 09:45:08.391  INFO 106828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 09:45:08.391  INFO 106828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 09:45:08.507  INFO 106828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 09:45:08.507 DEBUG 106828 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-21 09:45:08.507  INFO 106828 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1250 ms
+2019-10-21 09:45:08.629  INFO 106828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 09:45:08.760  INFO 106828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 09:45:09.546  INFO 106828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-21 09:45:09.878 DEBUG 106828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 09:45:09.989  INFO 106828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 09:45:09.999 DEBUG 106828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 09:45:10.026  WARN 106828 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-21 09:45:10.040 DEBUG 106828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-10-21 09:45:10.056 DEBUG 106828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 09:45:10.056 DEBUG 106828 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 09:45:10.178  INFO 106828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 09:45:10.178  INFO 106828 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 3.623 seconds (JVM running for 4.002)
+2019-10-21 10:02:15.808  INFO 30364 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL23-W10 with PID 30364 (D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95\build\classes\java\main started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:02:15.810  INFO 30364 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 10:02:16.431  INFO 30364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 10:02:16.481  INFO 30364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 2 repository interfaces.
+2019-10-21 10:02:16.746  INFO 30364 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81efee7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 10:02:17.043  INFO 30364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 10:02:17.066  INFO 30364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 10:02:17.067  INFO 30364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 10:02:17.166  INFO 30364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 10:02:17.166 DEBUG 30364 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-21 10:02:17.166  INFO 30364 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1318 ms
+2019-10-21 10:02:17.289  INFO 30364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 10:02:17.437  INFO 30364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 10:02:18.302  INFO 30364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-21 10:02:18.648 DEBUG 30364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:02:18.753  INFO 30364 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:02:18.764 DEBUG 30364 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:02:18.791  WARN 30364 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-21 10:02:18.814 DEBUG 30364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:02:18.827 DEBUG 30364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:02:18.833 DEBUG 30364 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:02:18.951  INFO 30364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 10:02:18.953  INFO 30364 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 3.665 seconds (JVM running for 4.119)
+2019-10-21 10:02:32.917  INFO 105360 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL23-W10 with PID 105360 (D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95\build\classes\java\main started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:02:32.917  INFO 105360 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 10:02:33.418  INFO 105360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 10:02:33.465  INFO 105360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 2 repository interfaces.
+2019-10-21 10:02:33.719  INFO 105360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26cc744a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 10:02:34.002  INFO 105360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 10:02:34.024  INFO 105360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 10:02:34.024  INFO 105360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 10:02:34.120  INFO 105360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 10:02:34.120 DEBUG 105360 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-21 10:02:34.120  INFO 105360 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1156 ms
+2019-10-21 10:02:34.237  INFO 105360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 10:02:34.384  INFO 105360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 10:02:35.173  INFO 105360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-21 10:02:35.525 DEBUG 105360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:02:35.625  INFO 105360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:02:35.625 DEBUG 105360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:02:35.656  WARN 105360 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-21 10:02:35.672 DEBUG 105360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:02:35.687 DEBUG 105360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:02:35.703 DEBUG 105360 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:02:35.809  INFO 105360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 10:02:35.811  INFO 105360 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 3.515 seconds (JVM running for 3.916)
+2019-10-21 10:15:13.569  INFO 23304 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 23304 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:15:13.569  INFO 23304 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:15:13.569 DEBUG 23304 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:15:14.617 DEBUG 23304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:15:14.818  INFO 23304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:15:14.833 DEBUG 23304 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:15:14.887 DEBUG 23304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:15:14.902 DEBUG 23304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:15:14.902 DEBUG 23304 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:15:14.971  INFO 23304 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:15:14.971  INFO 23304 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:15:14.971  INFO 23304 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 10:15:15.005  INFO 23304 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.935 seconds (JVM running for 2.917)
+2019-10-21 10:15:15.030 DEBUG 23304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:15:15.056 DEBUG 23304 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:15:15.056 DEBUG 23304 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-10-21 10:15:15.089 DEBUG 23304 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:15:13 CST 2019
+2019-10-21 10:15:15.091  INFO 23304 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:15:31.911  INFO 104820 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 104820 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:15:31.912  INFO 104820 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:15:31.922 DEBUG 104820 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:15:32.829 DEBUG 104820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:15:33.041  INFO 104820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:15:33.055 DEBUG 104820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:15:33.106 DEBUG 104820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:15:33.127 DEBUG 104820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:15:33.136 DEBUG 104820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:15:33.199  INFO 104820 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:15:33.199  INFO 104820 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:15:33.208  INFO 104820 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2019-10-21 10:15:33.232  INFO 104820 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.651 seconds (JVM running for 2.559)
+2019-10-21 10:15:33.269 DEBUG 104820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:15:33.281 DEBUG 104820 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:15:33.285 DEBUG 104820 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-10-21 10:15:33.300 DEBUG 104820 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:15:31 CST 2019
+2019-10-21 10:15:33.302  INFO 104820 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:15:56.723  INFO 90396 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 90396 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:15:56.723  INFO 90396 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:15:56.739 DEBUG 90396 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:15:57.755 DEBUG 90396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:15:57.953  INFO 90396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:15:57.967 DEBUG 90396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:15:58.018 DEBUG 90396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:15:58.040 DEBUG 90396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:15:58.049 DEBUG 90396 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:15:58.110  INFO 90396 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:15:58.110  INFO 90396 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:15:58.118  INFO 90396 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2019-10-21 10:15:58.142  INFO 90396 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.118 seconds (JVM running for 3.142)
+2019-10-21 10:15:58.182 DEBUG 90396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:15:58.193 DEBUG 90396 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:15:58.198 DEBUG 90396 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-10-21 10:15:58.214 DEBUG 90396 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:15:56 CST 2019
+2019-10-21 10:15:58.217  INFO 90396 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:20:51.493  INFO 154264 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 154264 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:20:51.493  INFO 154264 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:20:51.524 DEBUG 154264 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:20:52.610 DEBUG 154264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:20:52.873  INFO 154264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:20:52.880 DEBUG 154264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:20:52.942 DEBUG 154264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:20:52.980 DEBUG 154264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:20:52.980 DEBUG 154264 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:20:53.058  INFO 154264 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:20:53.058  INFO 154264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:20:53.058  INFO 154264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 10:20:53.080  INFO 154264 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.126 seconds (JVM running for 3.018)
+2019-10-21 10:20:53.127 DEBUG 154264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:20:53.143 DEBUG 154264 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:20:53.143 DEBUG 154264 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-10-21 10:20:53.158 DEBUG 154264 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:20:51 CST 2019
+2019-10-21 10:20:53.158  INFO 154264 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:21:08.254  INFO 64132 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 64132 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:21:08.254  INFO 64132 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:21:08.254 DEBUG 64132 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:21:09.318 DEBUG 64132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:21:09.503  INFO 64132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:21:09.525 DEBUG 64132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:21:09.572 DEBUG 64132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:21:09.588 DEBUG 64132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:21:09.603 DEBUG 64132 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:21:09.672  INFO 64132 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:21:09.672  INFO 64132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:21:09.672  INFO 64132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 10:21:09.704  INFO 64132 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.083 seconds (JVM running for 3.027)
+2019-10-21 10:21:09.741 DEBUG 64132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:21:09.757 DEBUG 64132 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:21:09.757 DEBUG 64132 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2019-10-21 10:21:09.788 DEBUG 64132 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:21:08 CST 2019
+2019-10-21 10:21:09.788  INFO 64132 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:21:47.112  INFO 161628 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 161628 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:21:47.112  INFO 161628 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:21:47.112 DEBUG 161628 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:21:48.083 DEBUG 161628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:21:48.300  INFO 161628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:21:48.315 DEBUG 161628 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:21:48.369 DEBUG 161628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:21:48.384 DEBUG 161628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:21:48.384 DEBUG 161628 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:21:48.453  INFO 161628 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:21:48.453  INFO 161628 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:21:48.469  INFO 161628 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 10:21:48.484  INFO 161628 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.851 seconds (JVM running for 2.833)
+2019-10-21 10:21:48.500 DEBUG 161628 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:21:47 CST 2019
+2019-10-21 10:21:48.500  INFO 161628 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:22:21.311  INFO 121964 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 121964 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:22:21.311  INFO 121964 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:22:21.326 DEBUG 121964 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:22:22.329 DEBUG 121964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:22:22.545  INFO 121964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:22:22.551 DEBUG 121964 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:22:22.614 DEBUG 121964 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:22:22.645 DEBUG 121964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:22:22.652 DEBUG 121964 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:22:22.714  INFO 121964 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:22:22.714  INFO 121964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:22:22.730  INFO 121964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 10:22:22.752  INFO 121964 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.274 seconds (JVM running for 3.257)
+2019-10-21 10:22:22.783 DEBUG 121964 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:22:21 CST 2019
+2019-10-21 10:22:22.783  INFO 121964 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:23:14.278  INFO 63968 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 63968 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:23:14.294  INFO 63968 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:23:14.294 DEBUG 63968 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448
+2019-10-21 10:23:15.227 DEBUG 63968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:23:15.459  INFO 63968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:23:15.466 DEBUG 63968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:23:15.512 DEBUG 63968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:23:15.544 DEBUG 63968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:23:15.544 DEBUG 63968 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:23:15.597  INFO 63968 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:23:15.597  INFO 63968 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:23:15.613  INFO 63968 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 10:23:15.628  INFO 63968 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.92 seconds (JVM running for 2.844)
+2019-10-21 10:23:15.660 DEBUG 63968 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e2fc448, started on Mon Oct 21 10:23:14 CST 2019
+2019-10-21 10:23:15.666  INFO 63968 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:03.190  INFO 145504 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 145504 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:27:03.190  INFO 145504 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:27:03.205 DEBUG 145504 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21680803
+2019-10-21 10:27:04.223 DEBUG 145504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:27:04.446  INFO 145504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:04.446 DEBUG 145504 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:27:04.508 DEBUG 145504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:27:04.524 DEBUG 145504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:27:04.540 DEBUG 145504 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:27:04.593  INFO 145504 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:27:04.593  INFO 145504 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:27:04.609  INFO 145504 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 10:27:04.624  INFO 145504 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.982 seconds (JVM running for 2.934)
+2019-10-21 10:27:04.709 DEBUG 145504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.addParkingLot(com.thoughtworks.parking_lot.Entity.ParkingLot) throws javassist.NotFoundException
+2019-10-21 10:27:04.747 DEBUG 145504 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.Entity.ParkingLot@4409cae6]
+2019-10-21 10:27:04.747 DEBUG 145504 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:27:04.762 DEBUG 145504 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@21680803, started on Mon Oct 21 10:27:03 CST 2019
+2019-10-21 10:27:04.778  INFO 145504 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:07.932  INFO 49860 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 49860 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:27:07.932  INFO 49860 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:27:07.932 DEBUG 49860 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21680803
+2019-10-21 10:27:09.056 DEBUG 49860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:27:09.266  INFO 49860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:09.266 DEBUG 49860 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:27:09.319 DEBUG 49860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:27:09.350 DEBUG 49860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:27:09.350 DEBUG 49860 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:27:09.419  INFO 49860 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:27:09.419  INFO 49860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:27:09.435  INFO 49860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 10:27:09.451  INFO 49860 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.104 seconds (JVM running for 3.302)
+2019-10-21 10:27:09.482 DEBUG 49860 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@21680803, started on Mon Oct 21 10:27:07 CST 2019
+2019-10-21 10:27:09.482  INFO 49860 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:17.353  INFO 39632 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 39632 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:27:17.353  INFO 39632 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:27:17.369 DEBUG 39632 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21680803
+2019-10-21 10:27:18.387 DEBUG 39632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:27:18.587  INFO 39632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:18.603 DEBUG 39632 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:27:18.656 DEBUG 39632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:27:18.672 DEBUG 39632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:27:18.687 DEBUG 39632 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:27:18.757  INFO 39632 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:27:18.757  INFO 39632 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:27:18.757  INFO 39632 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 10:27:18.788  INFO 39632 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.059 seconds (JVM running for 2.939)
+2019-10-21 10:27:18.803 DEBUG 39632 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@21680803, started on Mon Oct 21 10:27:17 CST 2019
+2019-10-21 10:27:18.803  INFO 39632 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:42.907  INFO 113380 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 113380 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:27:42.907  INFO 113380 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:27:42.923 DEBUG 113380 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21680803
+2019-10-21 10:27:43.925 DEBUG 113380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:27:44.142  INFO 113380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:27:44.142 DEBUG 113380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:27:44.204 DEBUG 113380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:27:44.226 DEBUG 113380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:27:44.226 DEBUG 113380 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:27:44.304  INFO 113380 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:27:44.304  INFO 113380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:27:44.311  INFO 113380 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2019-10-21 10:27:44.326  INFO 113380 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.842 seconds (JVM running for 2.791)
+2019-10-21 10:27:44.389 DEBUG 113380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 10:27:44.389 DEBUG 113380 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:27:44.404 DEBUG 113380 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.thoughtworks.parking_lot.Entity.ParkingLot@2cccf134, com.thoughtworks.parking_lot.Entity.Parkin (truncated)...]
+2019-10-21 10:27:44.458 DEBUG 113380 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@21680803, started on Mon Oct 21 10:27:42 CST 2019
+2019-10-21 10:27:44.474  INFO 113380 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:57:37.526  INFO 141264 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 141264 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 10:57:37.526  INFO 141264 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 10:57:37.526 DEBUG 141264 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21680803
+2019-10-21 10:57:38.559 DEBUG 141264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 10:57:38.760  INFO 141264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:57:38.760 DEBUG 141264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 10:57:38.822 DEBUG 141264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 10:57:38.844 DEBUG 141264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 10:57:38.844 DEBUG 141264 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 10:57:38.923  INFO 141264 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 10:57:38.923  INFO 141264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 10:57:38.929  INFO 141264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2019-10-21 10:57:38.945  INFO 141264 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.12 seconds (JVM running for 3.224)
+2019-10-21 10:57:38.992 DEBUG 141264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 10:57:39.007 DEBUG 141264 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 10:57:39.045 DEBUG 141264 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@34f7b44f]
+2019-10-21 10:57:39.076 DEBUG 141264 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@21680803, started on Mon Oct 21 10:57:37 CST 2019
+2019-10-21 10:57:39.092  INFO 141264 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:02:50.304  INFO 102860 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 102860 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:02:50.304  INFO 102860 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:02:50.319 DEBUG 102860 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@325f7fa9
+2019-10-21 11:02:51.468 DEBUG 102860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:02:51.707  INFO 102860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:02:51.722 DEBUG 102860 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:02:51.791 DEBUG 102860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:02:51.822 DEBUG 102860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:02:51.838 DEBUG 102860 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:02:51.907  INFO 102860 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:02:51.907  INFO 102860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:02:51.923  INFO 102860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:02:51.965  INFO 102860 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.059 seconds (JVM running for 3.051)
+2019-10-21 11:02:52.007 DEBUG 102860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:06:13.662 DEBUG 102860 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:06:13.708 DEBUG 102860 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@2de3b052]
+2019-10-21 11:06:13.740 DEBUG 102860 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@325f7fa9, started on Mon Oct 21 11:02:50 CST 2019
+2019-10-21 11:06:13.740  INFO 102860 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:06:17.386  INFO 123964 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 123964 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:06:17.386  INFO 123964 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:06:17.386 DEBUG 123964 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e34c607
+2019-10-21 11:06:18.490 DEBUG 123964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:06:18.737  INFO 123964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:06:18.752 DEBUG 123964 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:06:18.806 DEBUG 123964 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:06:18.837 DEBUG 123964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:06:18.853 DEBUG 123964 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:06:18.937  INFO 123964 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:06:18.937  INFO 123964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:06:18.937  INFO 123964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:06:18.980  INFO 123964 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.969 seconds (JVM running for 2.972)
+2019-10-21 11:06:25.353 DEBUG 123964 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:06:33.105 DEBUG 123964 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:06:33.141 DEBUG 123964 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@550c973e]
+2019-10-21 11:06:33.172 DEBUG 123964 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1e34c607, started on Mon Oct 21 11:06:17 CST 2019
+2019-10-21 11:06:33.172  INFO 123964 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:07:43.942  INFO 156112 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 156112 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:07:43.943  INFO 156112 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:07:43.953 DEBUG 156112 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:07:44.979 DEBUG 156112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:07:45.180  INFO 156112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:07:45.202 DEBUG 156112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:07:45.249 DEBUG 156112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:07:45.280 DEBUG 156112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:07:45.280 DEBUG 156112 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:07:45.349  INFO 156112 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:07:45.349  INFO 156112 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:07:45.349  INFO 156112 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:07:45.381  INFO 156112 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.989 seconds (JVM running for 2.84)
+2019-10-21 11:07:45.419 DEBUG 156112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:07:45.434 DEBUG 156112 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:07:45.465 DEBUG 156112 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@2f09e6b2]
+2019-10-21 11:07:45.519 DEBUG 156112 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:07:43 CST 2019
+2019-10-21 11:07:45.519  INFO 156112 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:07:55.083  INFO 142680 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 142680 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:07:55.084  INFO 142680 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:07:55.087 DEBUG 142680 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:07:56.103 DEBUG 142680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:07:56.312  INFO 142680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:07:56.327 DEBUG 142680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:07:56.381 DEBUG 142680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:07:56.396 DEBUG 142680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:07:56.396 DEBUG 142680 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:07:56.465  INFO 142680 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:07:56.465  INFO 142680 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:07:56.465  INFO 142680 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:07:56.497  INFO 142680 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.067 seconds (JVM running for 2.943)
+2019-10-21 11:07:56.534 DEBUG 142680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:07:56.550 DEBUG 142680 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:07:56.581 DEBUG 142680 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@5175d9ad]
+2019-10-21 11:07:56.650 DEBUG 142680 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:07:55 CST 2019
+2019-10-21 11:07:56.650  INFO 142680 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:08:14.550  INFO 103828 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 103828 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:08:14.566  INFO 103828 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:08:14.566 DEBUG 103828 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:08:15.668 DEBUG 103828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:08:15.868  INFO 103828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:08:15.884 DEBUG 103828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:08:15.922 DEBUG 103828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:08:15.959 DEBUG 103828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:08:15.968 DEBUG 103828 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:08:16.022  INFO 103828 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:08:16.022  INFO 103828 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:08:16.037  INFO 103828 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2019-10-21 11:08:16.066  INFO 103828 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.277 seconds (JVM running for 3.366)
+2019-10-21 11:08:16.106 DEBUG 103828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.thoughtworks.parking_lot.Entity.ParkingLot> com.thoughtworks.parking_lot.Controller.ParkingLotController.getAllParkingLot()
+2019-10-21 11:08:16.106 DEBUG 103828 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:08:16.122 DEBUG 103828 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.thoughtworks.parking_lot.Entity.ParkingLot@3c18942, com.thoughtworks.parking_lot.Entity.Parking (truncated)...]
+2019-10-21 11:08:16.191 DEBUG 103828 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:08:14 CST 2019
+2019-10-21 11:08:16.191  INFO 103828 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:08:40.291  INFO 147016 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 147016 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:08:40.291  INFO 147016 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:08:40.291 DEBUG 147016 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:08:41.341 DEBUG 147016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:08:41.541  INFO 147016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:08:41.541 DEBUG 147016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:08:41.594 DEBUG 147016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:08:41.610 DEBUG 147016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:08:41.626 DEBUG 147016 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:08:41.679  INFO 147016 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:08:41.679  INFO 147016 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:08:41.695  INFO 147016 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:08:41.710  INFO 147016 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.11 seconds (JVM running for 3.078)
+2019-10-21 11:08:41.757 DEBUG 147016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:08:41.773 DEBUG 147016 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:08:41.811 DEBUG 147016 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@2f09e6b2]
+2019-10-21 11:08:41.842 DEBUG 147016 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:08:40 CST 2019
+2019-10-21 11:08:41.842  INFO 147016 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:09:53.145  INFO 138608 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 138608 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:09:53.145  INFO 138608 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:09:53.161 DEBUG 138608 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:09:54.210 DEBUG 138608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:09:54.410  INFO 138608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:09:54.426 DEBUG 138608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:09:54.464 DEBUG 138608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:09:54.495 DEBUG 138608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:09:54.495 DEBUG 138608 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:09:54.564  INFO 138608 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:09:54.564  INFO 138608 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:09:54.564  INFO 138608 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:09:54.595  INFO 138608 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.204 seconds (JVM running for 3.093)
+2019-10-21 11:09:54.633 DEBUG 138608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:09:54.648 DEBUG 138608 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:09:54.680 DEBUG 138608 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@2f09e6b2]
+2019-10-21 11:09:54.733 DEBUG 138608 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:09:53 CST 2019
+2019-10-21 11:09:54.733  INFO 138608 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:11:05.208  INFO 147964 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 147964 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:11:05.208  INFO 147964 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:11:05.223 DEBUG 147964 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:11:06.364 DEBUG 147964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:11:06.580  INFO 147964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:11:06.580 DEBUG 147964 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:11:06.642 DEBUG 147964 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:11:06.664 DEBUG 147964 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:11:06.664 DEBUG 147964 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:11:06.727  INFO 147964 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:11:06.727  INFO 147964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:11:06.743  INFO 147964 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:11:06.765  INFO 147964 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.106 seconds (JVM running for 2.989)
+2019-10-21 11:11:06.796 DEBUG 147964 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.Entity.ParkingLot com.thoughtworks.parking_lot.Controller.ParkingLotController.getParkingLot(java.lang.String) throws javassist.NotFoundException
+2019-10-21 11:11:06.812 DEBUG 147964 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:11:06.849 DEBUG 147964 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Entity.ParkingLot@5175d9ad]
+2019-10-21 11:11:06.896 DEBUG 147964 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:11:05 CST 2019
+2019-10-21 11:11:06.896  INFO 147964 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:14:41.822  INFO 68516 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 68516 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:14:41.822  INFO 68516 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:14:41.822 DEBUG 68516 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:14:42.871 DEBUG 68516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:14:43.084  INFO 68516 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:14:43.100 DEBUG 68516 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:14:43.156 DEBUG 68516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:14:43.171 DEBUG 68516 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:14:43.187 DEBUG 68516 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:14:43.240  INFO 68516 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:14:43.240  INFO 68516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:14:43.256  INFO 68516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:14:43.271  INFO 68516 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.966 seconds (JVM running for 2.842)
+2019-10-21 11:14:43.325 DEBUG 68516 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:14:43.340 DEBUG 68516 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:14:43.372 DEBUG 68516 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:14:41 CST 2019
+2019-10-21 11:14:43.372  INFO 68516 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:16:43.129  INFO 68540 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 68540 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:16:43.129  INFO 68540 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:16:43.145 DEBUG 68540 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:16:44.247 DEBUG 68540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:16:44.432  INFO 68540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:16:44.448 DEBUG 68540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:16:44.495 DEBUG 68540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:16:44.517 DEBUG 68540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:16:44.533 DEBUG 68540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:16:44.595  INFO 68540 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:16:44.595  INFO 68540 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:16:44.595  INFO 68540 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:16:44.617  INFO 68540 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.343 seconds (JVM running for 3.22)
+2019-10-21 11:16:44.664 DEBUG 68540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:16:44.680 DEBUG 68540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse com.thoughtworks.parking_lot.Controller.ControllerAdvice.ControllerAdvice.notFoundException(javassist.NotFoundException)
+2019-10-21 11:16:44.695 DEBUG 68540 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-21 11:16:44.711 DEBUG 68540 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse@3a6e9856]
+2019-10-21 11:16:44.717 DEBUG 68540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [javassist.NotFoundException: Parking Lot Not Found]
+2019-10-21 11:16:44.749 DEBUG 68540 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:16:43 CST 2019
+2019-10-21 11:16:44.749  INFO 68540 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:17:35.096  INFO 140368 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 140368 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:17:35.096  INFO 140368 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:17:35.096 DEBUG 140368 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:17:36.130 DEBUG 140368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:17:36.346  INFO 140368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:17:36.362 DEBUG 140368 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:17:36.409 DEBUG 140368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:17:36.431 DEBUG 140368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:17:36.431 DEBUG 140368 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:17:36.493  INFO 140368 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:17:36.493  INFO 140368 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:17:36.509  INFO 140368 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:17:36.531  INFO 140368 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.325 seconds (JVM running for 3.245)
+2019-10-21 11:17:36.562 DEBUG 140368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:17:36.578 DEBUG 140368 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse com.thoughtworks.parking_lot.Controller.ControllerAdvice.ControllerAdvice.notFoundException(javassist.NotFoundException)
+2019-10-21 11:17:36.609 DEBUG 140368 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-21 11:17:36.609 DEBUG 140368 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse@935493d]
+2019-10-21 11:17:36.609 DEBUG 140368 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [javassist.NotFoundException: Parking Lot Not Found]
+2019-10-21 11:17:36.631 DEBUG 140368 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:17:35 CST 2019
+2019-10-21 11:17:36.631  INFO 140368 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:19:01.081  INFO 87384 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 87384 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:19:01.081  INFO 87384 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:19:01.100 DEBUG 87384 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@70d8de
+2019-10-21 11:19:02.250 DEBUG 87384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:19:02.482  INFO 87384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:19:02.504 DEBUG 87384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:19:02.566 DEBUG 87384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:19:02.597 DEBUG 87384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:19:02.604 DEBUG 87384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:19:02.704  INFO 87384 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:19:02.704  INFO 87384 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:19:02.720  INFO 87384 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 11:19:02.751  INFO 87384 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.035 seconds (JVM running for 3.116)
+2019-10-21 11:19:02.798 DEBUG 87384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:19:36.346 DEBUG 87384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse com.thoughtworks.parking_lot.Controller.ControllerAdvice.ControllerAdvice.notFoundException(javassist.NotFoundException)
+2019-10-21 11:19:36.368 DEBUG 87384 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-21 11:19:36.368 DEBUG 87384 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.Controller.ControllerAdvice.ErrorReponse@113eed88]
+2019-10-21 11:19:36.384 DEBUG 87384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [javassist.NotFoundException: Parking Lot Not Found]
+2019-10-21 11:19:36.399 DEBUG 87384 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@70d8de, started on Mon Oct 21 11:19:01 CST 2019
+2019-10-21 11:19:36.399  INFO 87384 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:19:39.933  INFO 161524 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 161524 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:19:39.934  INFO 161524 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:19:39.945 DEBUG 161524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:19:41.012 DEBUG 161524 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:19:41.211  INFO 161524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:19:41.227 DEBUG 161524 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:19:41.280 DEBUG 161524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:19:41.296 DEBUG 161524 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:19:41.312 DEBUG 161524 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:19:41.381  INFO 161524 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:19:41.381  INFO 161524 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:19:41.381  INFO 161524 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 11:19:41.412  INFO 161524 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.02 seconds (JVM running for 2.895)
+2019-10-21 11:19:41.443 DEBUG 161524 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:19:41.465 DEBUG 161524 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:19:41.512 DEBUG 161524 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:19:39 CST 2019
+2019-10-21 11:19:41.512  INFO 161524 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:20:09.791  INFO 71168 --- [main] c.t.p.C.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL23-W10 with PID 71168 (started by lansaro in D:\ITA_GITVOB\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 11:20:09.791  INFO 71168 --- [main] c.t.p.C.ParkingLotControllerTest         : The following profiles are active: test
+2019-10-21 11:20:09.807 DEBUG 71168 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82
+2019-10-21 11:20:10.709 DEBUG 71168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 11:20:10.909  INFO 71168 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 11:20:10.925 DEBUG 71168 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 11:20:10.971 DEBUG 71168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 11:20:10.987 DEBUG 71168 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 11:20:11.003 DEBUG 71168 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 11:20:11.068  INFO 71168 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 11:20:11.068  INFO 71168 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 11:20:11.077  INFO 71168 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2019-10-21 11:20:11.095  INFO 71168 --- [main] c.t.p.C.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.063 seconds (JVM running for 2.933)
+2019-10-21 11:20:11.126 DEBUG 71168 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.HttpEntity com.thoughtworks.parking_lot.Controller.ParkingLotController.updateCapacity(java.lang.String,java.lang.Integer) throws javassist.NotFoundException
+2019-10-21 11:20:11.158 DEBUG 71168 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 11:20:11.178 DEBUG 71168 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1b39fd82, started on Mon Oct 21 11:20:09 CST 2019
+2019-10-21 11:20:11.178  INFO 71168 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

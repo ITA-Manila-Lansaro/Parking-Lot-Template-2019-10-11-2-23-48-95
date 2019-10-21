@@ -15,9 +15,11 @@ public class ParkingOrderController {
     private static final String PARKING_LOT_IS_FULL = "Parking Lot is full";
     public static final String PLATE_NUMBER_NOT_FOUND = "Plate Number Not Found";
 
-    private final ParkingLotService parkingLotService;
+    @Autowired
+    ParkingLotService parkingLotService;
 
-    private final ParkingOrderService parkingOrderService;
+    @Autowired
+    ParkingOrderService parkingOrderService;
 
     public ParkingOrderController(ParkingLotService parkingLotService, ParkingOrderService parkingOrderService) {
         this.parkingLotService = parkingLotService;
